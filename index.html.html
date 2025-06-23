@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSRTC</title>
+</head>
+<body>
+    <form action="forms.html">
+        <center>
+      <h1>Andhra Pradesh Road Transport Corporation </h1>
+      <h1>General Buspass Application</h1></center>
+      <fieldset >
+        <legend>Applicant Details</legend>
+        <label for="Name" style="padding: 5px;">Name*</label>
+        <input type="text" id="Name" name="Name" required style="margin-left: 80px;">
+        <label for="fathername" style="margin-left: 80px;">Father/Guardian's</label>
+        <input type="text" id="fathername" name="fatherame" required style="margin-left: 35px;"><br><br>
+        <label for="DOB"></label>Date Of Birth</label>
+        <input type="date" id="DOB" name="DateOfBirth" required style="margin-left: 48px;">
+        <label style="margin-left: 133px;">Gender*</label>
+        <label for="Female"style="margin-left:94px">Female</label>
+        <input type="radio" id="Female" name="Gender" value="Female" required>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="Gender" value="Male" required><br><br>
+        <label for="number">Whatsapp No*</label>
+        <input type="text"  id="number" name="Whatsapp No" required style="margin-left: 40px;" maxlength="10">
+        <label for="number" style="margin-left: 80px;">Aadhaar Number</label>
+        <input type="text"  id="number" name="Aadhaar" required style="margin-left: 40px;" maxlength="10"><br><br>
+        <label for="photo" >Photo*</label>
+        <input type="file" name="photo" required id="photo" style="margin-left: 90px;">
+        <label for="email" >E-mail*</label>
+        <input type="email" id="email" name="email" required style="margin-left: 97px;">
+    </fieldset><br>
+    <fieldset>
+        <legend>Residential Address Details</legend>
+        <label for="Applicant address" style="margin-right: 50PX;">Applicant Address</label>
+       
+    <textarea id="Applicant address" name="Applicant Address"></textarea>
+    <label for="District" style="margin-left: 50px;">District*</label>
+        <select id="District" name="District" style="margin-left: 95px;">
+  <option value="Nellore">Nellore</option>
+  <option value="Tirupati">Tirupati</option>
+  <option value="Ongale">Ongole</option>
+   <option value="Kavali">Kavali</option>
+  <option value="Bapatla">Bapatla</option>
+    </select><br><br>
+
+    <label for="Mandal">Mandal*</label>
+    <select id="Mandal" name="Mandal" style="margin-left: 112px;">
+  <option value="Kavali">Kavali</option>
+  <option value="musunoor">Musunoor</option>
+  <option value="Thummalapenta">Thummalapenta</option>
+   <option value="Juvvaladinne">Juvvaladinne</option>
+  <option value="Ramaypatnam">Ramaypatnam</option>
+    </select> 
+    <label for="village" style="margin-left: 100px;">Village*</label>
+    <input type="text" id="village" name="village" required style="margin-left: 95px;">
+    <br><br>
+    <label for="pincode">Pincode*</label>
+    <input type="text" name="pincode" id="pincode" required style="margin-left: 110px;">
+    
+    </fieldset><br><br>
+    <fieldset>
+      <legend>Pass Type Details</legend>
+      <label for="city">City*</label>
+       <select id="city" name="city" style="margin-left: 112px;">
+        <option value="" disabled selected hidden>---Select Type---</option>
+  <option value="Vijayawada">Vijayawada</option>
+  <option value="Guntur">Guntur</option>
+  <option value="Pitapurram">Pitapuram</option>
+   <option value="viza">Viza</option>
+  <option value="Kadapa">Kadapa</option>
+    </select> <br><br>
+    <label for="passtype" style="margin-right: 78px;">Pass type*</label>
+    <select id="passtype" name="passtype" required>
+      <option value="" disabled selected hidden>---Select Type---</option>
+      <option value="Greaterpass">Greater Pass</option>
+      <option value="Genaral">Genaral</option>
+      <option value="Ordinary">Ordinary</option>
+      <option value="Metro Express">Metro Express</option>
+      <option value="Metro Delux">Metro Delux</option>
+    </select><br><br>
+     <label for="From Place District" style="margin-right: 20px;">From Place District</label>
+    <select id="From Place District" name="From Place District" required>
+      <option value="" disabled selected hidden>---Select Type---</option>
+      <option value="Amaravathi">Amaravathi</option>
+    </select>
+     <label for="To Place District" style="margin-left: 80px;">From Place District</label>
+    <select id="To Place District" name="To Place District" style="margin-left: 20px;" required>
+      <option value="" disabled selected hidden>---Select Type---</option>
+      <option value="Nellore">Nellore</option>
+    </select><br><br>
+    <label for="from place">From Place*</label>
+    <input type="Text" id="from place" name="from place" required style="margin-left: 62PX;">
+     <label for="Too place" style="margin-left: 30px;">To Place*</label>
+    <input type="Text" id="To place" name="To place" required style="margin-left: 82PX;">
+    <br><br>
+    <label for="rout">Rout*</label>
+<select name="rout" id="rout" style="margin-left: 105px;">
+  <option value="">--Select Rout--</option>
+</select>
+</fieldset><br><br>
+
+<fieldset >
+  <legend >
+    Mode of Payment & Pass Collection
+  </legend>
+
+  <label for="payment " >Payment Mode </label>
+  <select id="payment" name="payment" style="margin-left: 50px;">
+    <option>Select Payment Mode</option>
+    <option>Online</option>
+    <option>Offline</option>
+  </select><br><br>
+
+  <label for="delivery" >Pass Delivery Mode </label>
+  <select id="delivery" name="delivery" style="margin-left: 50px;">
+    <option>Select Pass Delivery Mode</option>
+    <option>Courier</option>
+    <option>Pickup</option>
+  </select><br><br>
+
+  <label for="center" >Center at which you want to Collect Pass</label>
+  <select id="center" name="center" style="margin-left: 50px;">
+    <option>-----Select-----</option>
+    <option>Center A</option>
+    <option>Center B</option>
+  </select><br><br>
+
+  <label for="rout" >Rout </label>
+  <select id="rout" name="rout" style="margin-left: 120px;">
+    <option>--Select Rout--</option>
+    <option>Route 1</option>
+    <option>Route 2</option>
+  </select>
+</fieldset>
+<center>
+  <input type="submit">
+</center>
+</form>
+
+</body>
+</html>
